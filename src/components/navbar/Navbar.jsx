@@ -1,5 +1,5 @@
 import logo from "../../assets/logo-draxo.png";
-import { Container, LogoContainer, ListContainer, H6, H4} from "./navbarElements";
+import { Container, LogoContainer, NavList, H6, H4} from "./navbarElements";
 
 
 const Navbar = () => {
@@ -9,10 +9,10 @@ const Navbar = () => {
         <img src={logo} className="App-logo " alt="logo"></img>
         <ion-icon name="reorder-four-outline"></ion-icon>
       </LogoContainer>
-      <ListContainer>
+      <NavList>
         <H4>Lista de Casas</H4>
         <H6>Lista de casas en san Francisco</H6>
-      </ListContainer>
+      </NavList>
     </Container>
   );
 };

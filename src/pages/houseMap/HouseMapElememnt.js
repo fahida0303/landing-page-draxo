@@ -1,24 +1,30 @@
-import styled from 'styled-components';
-//import { devices } from './Breakpoints';
+import styled from "styled-components";
+import { devices } from '../../theme/Breakpoints';
 
 export const DivMap = styled.div`
-width: 100vw;
-height: auto;
-margin:5px;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  left: 18rem;
+
+  @media ${devices.laptop} {
+    width: 80%;
+    left: 14rem;
+  }
+  @media ${devices. tablet} {
+    left: 18.5rem;
+  }
+  @media ${devices.mobileL} {
+    top: 13rem;
+    left: 32px;
+  }
 `;
-
-
 export const ButtonMp = styled.button`
-
-          Background: red;
-          width: 30px;
-          height: 20px;
-          borderRadius: 50%;
-          border: none;
-          display: block
-
-
+  background: red;
+  color: #ffff;
+  width: 32px;
+  height: 34px;
+  display: block;
+  border-radius: 24px;
+  border: none;
 `;
-export const Img =  styled.img`
-  width: 25px;
-`

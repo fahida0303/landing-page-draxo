@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import {
-  devices
-} from "../../theme/Breakpoints";
+import { devices } from "../../theme/Breakpoints";
 
-export const Container = styled.div `
+export const Container = styled.div`
   border-bottom: 1px solid #d4d4d4;
   display: flex;
+  @media ${devices.tablet} {
+     border-bottom: none;
+    }
 `;
 
-export const LogoContainer = styled.div `
+export const LogoContainer = styled.div`
   width: 363px;
   height: 95px;
   align-items: center;
@@ -28,13 +29,17 @@ export const LogoContainer = styled.div `
 
   .App-logo {
     @media ${devices.tablet} {
-      width: 190px;
-      height: 77px;
+      width: 147px;
+      height: auto;
+      margin-left: 36px;
+    }
+    @media ${devices.mobileL} {
+      margin-left: 9px;
     }
   }
 `;
 
-export const ListContainer = styled.div `
+export const NavList = styled.div`
   display: flex;
   font-family: "Open Sans", sans-serif;
   flex-direction: column;
@@ -44,31 +49,36 @@ export const ListContainer = styled.div `
   position: absolute;
   align-items: center;
 
-  @media ${devices.mobileL} {
-    left: 162px;
-    top: 241px;
-    position: absolute;
-    text-align: center;
-  }
-
-  @media ${devices.mobileL} {
-    left: 130px;
-  }
-
+ 
   @media ${devices.mobileS} {
     left: 52px;
     margin-left: 38px;
   }
+
+  @media ${devices.mobileL} {
+    left: 128px;
+    top: 8rem;
+    margin: 10px;
+    position: absolute;
+    text-align: center;
+  }
 `;
 
-export const H4 = styled.h4 `
+export const H4 = styled.h4`
   font-size: 23px;
   font-style: normal;
   font-weight: 510;
   line-height: 29px;
+
+  @media ${devices.mobileL} {
+    font-size: 21px;
+  }
+  @media ${devices.mobileI} {
+    font-size: 21px;
+  }
 `;
 
-export const H6 = styled.h6 `
+export const H6 = styled.h6`
   font-style: italic;
   font-weight: 300;
   font-size: 14px;
@@ -80,6 +90,6 @@ export const H6 = styled.h6 `
   left: 0px;
 
   @media ${devices.mobileL} {
-    left: -135px;
+    left: -123px;
   }
 `;

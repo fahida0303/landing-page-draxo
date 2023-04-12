@@ -14,7 +14,6 @@ useEffect(() => {
    .then((res) => res.json())
    .then((data) => {
       setData(data) 
-     console.log(data);
    })
  }, [])
 
@@ -26,7 +25,6 @@ useEffect(() => {
       {
         Object.keys(data).sort().map(key => {
           const value = data[key]
-          console.log(value);
           return <div>
             <H3 key={key}>{key}</H3>
             
@@ -45,7 +43,7 @@ useEffect(() => {
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
         })}>
         {isExpanded ? 'Ver menos' : 'Ver'}
-       <p {...getCollapseProps()}>{inf.description},{inf.states_name},{inf.city_latitude},{inf.city_longitude}</p>
+       {/* <p {...getCollapseProps()}>{inf.description},{inf.states_name},{inf.city_latitude},{inf.city_longitude}</p> */}
       </Button>
       </Div>
               </Module>
