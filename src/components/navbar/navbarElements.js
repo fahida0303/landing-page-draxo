@@ -4,7 +4,7 @@ import { devices } from "../../theme/Breakpoints";
 export const Container = styled.div`
   border-bottom: 1px solid #d4d4d4;
   display: flex;
-  @media ${devices.tablet} {
+  @media ${devices.mobileL} {
      border-bottom: none;
     }
 `;

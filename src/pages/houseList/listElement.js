@@ -95,12 +95,12 @@ export const Button = styled.button`
   background: white;
   cursor: pointer;
   position: relative;
-  left: 29rem;
-  bottom: 3rem;
+  left: 26rem;
+  bottom: 2.5rem;
   width: 1%;
   right: 12rem;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
 
   @media ${devices.laptop} {
     left: 21rem;
@@ -118,13 +118,13 @@ export const Button = styled.button`
   }
 
   @media ${devices.mobileM} {
-    left: 11.5rem;
-    bottom: 2rem;
+    left: 13rem;
+    bottom: 2.5rem;
   }
 
   @media ${devices.mobileS} {
-    left: 10.5rem;
-    bottom: 3.5rem;
+    left: 12.5rem;
+    bottom: 2.5rem;
   }
 `;
 
@@ -134,7 +134,7 @@ export const ContinerL = styled.div`
   max-width: 47%;
   overflow: auto;
   padding: 0 1rem;
-  margin: 4rem 11rem 11rem -4%;
+  margin: 4rem 4rem 11rem -4%;
 
   @media ${devices.tablet} {
     height: 44rem;
@@ -157,5 +157,7 @@ export const ContinerL = styled.div`
 
   @media ${devices.mobileS} {
     margin-left: 5%;
+    width: 104%;
+    max-width: 95vw;
   }
 `;

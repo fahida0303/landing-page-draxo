@@ -36,16 +36,11 @@ export const Hr = styled.hr`
   opacity: 0.2;
   left: 37px;
   position: absolute;
-  width: 20%;
+  width: 16%;
   margin: 4em 0;
 
 
-  /* @media ${devices.mobileI} {
-    color: black;
-    opacity: 1.5;
-    left: 80px;
-    width: 61%;
-  } */
+
   @media ${devices.mobileL} {
     opacity: 1.5;
     color: black;
@@ -53,12 +48,12 @@ export const Hr = styled.hr`
     width: 61%;
   }
   @media ${devices.mobileM} {
-    width: 50%;
+    width: 65%;
     opacity: 1;
   }
   @media ${devices.mobileS} {
     left: 62px;
-    width: 80%;
+    width: 78%;
   }
 `;
 
@@ -104,6 +99,10 @@ export const Icon = styled.li`
       font-size: 0px;
       margin: 2px 25px 0px 26px;
     }
+
+    @media ${devices.mobileS} {
+      margin: 2px 31px 0px 10px;
+    }
   }
 `;
 
@@ -119,7 +118,7 @@ export const Ul = styled.ul`
   @media ${devices.mobileL} {
     display: flex;
     padding: 0px;
-    /* margin-left: 24px; */
+    margin-left: 24px;
   }
 `;
 
